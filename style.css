@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Della+Respira:regular);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Della Respira', sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #eaeaea;
+}
+
+/* SUBSCRIBE ===> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* SUBSCRIBE ===> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* SUBSCRIBE ===> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+:root {
+    --phone-clr: #ff4141;
+    --tablet-clr: #ffc041;
+    --laptop-clr: #41d0ff;
+    --computer-clr: #c342ff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.card {
+    width: 320px;
+    aspect-ratio: 2 / 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0 2.5rem;
+    text-align: right;
+}
+.card p {
+    font-weight: 600;
+    color: #155;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 8px double;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-size: 10rem;
+    text-align: left;
+    line-height: 18rem;
+    padding: 0 .5rem;
+    color: #fff;
+    z-index: -10;
+}
+.card i {
+    position: absolute;
+    font-size: 2rem;
+    top: 30px;
+    right: 60px;
+}
+.card:first-child i { color: var(--phone-clr); }
+.card:nth-child(2) i { color: var(--tablet-clr); }
+.card:nth-child(3) i { color: var(--laptop-clr); }
+.card:last-child i { color: var(--computer-clr); }
+
+.card:first-child::before {
+    content: '1';
+    border-color: var(--phone-clr);
+    box-shadow: 0 0 1rem var(--phone-clr),
+                inset 0 0 1rem var(--phone-clr);
+    -webkit-text-stroke: 2.5px var(--phone-clr);
+    text-shadow: 0 0 .5rem var(--phone-clr);
+}
+.card:nth-child(2)::before {
+    content: '2';
+    border-color: var(--tablet-clr);
+    box-shadow: 0 0 1rem var(--tablet-clr),
+                inset 0 0 1rem var(--tablet-clr);
+    -webkit-text-stroke: 2.5px var(--tablet-clr);
+    text-shadow: 0 0 .5rem var(--tablet-clr);
+}
+.card:nth-child(3)::before {
+    content: '3';
+    border-color: var(--laptop-clr);
+    box-shadow: 0 0 1rem var(--laptop-clr),
+                inset 0 0 1rem var(--laptop-clr);
+    -webkit-text-stroke: 2.5px var(--laptop-clr);
+    text-shadow: 0 0 .5rem var(--laptop-clr);
+}
+.card:last-child::before {
+    content: '4';
+    border-color: var(--computer-clr);
+    box-shadow: 0 0 1rem var(--computer-clr),
+                inset 0 0 1rem var(--computer-clr);
+    -webkit-text-stroke: 2.5px var(--computer-clr);
+    text-shadow: 0 0 .5rem var(--computer-clr);
+}
+/* SUBSCRIBE ===> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* SUBSCRIBE ===> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
+/* SUBSCRIBE ===> https://www.youtube.com/channel/UCzWS-AiirxpTDq_AGSg9Fhg */
